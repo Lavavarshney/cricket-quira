@@ -1,12 +1,17 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
+// Add Tailwind CSS to the plugins array
 export default defineConfig({
   plugins: [react()],
   css: {
-    modules: {
-      localsConvention: 'camelCaseOnly',
+    preprocessorOptions: {
+      postcss: {
+        plugins: [
+          require('tailwindcss')('./tailwind.config.js'),
+          require('autoprefixer'),
+        ],
+      },
     },
   },
-});
+})
