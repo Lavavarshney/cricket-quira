@@ -38,16 +38,16 @@ Conclusion This solution highlights our implementation of a feature-rich cricket
 1. **Install Daytona**: Follow the [Daytona installation guide](https://www.daytona.io/docs/installation/installation/).  
 2. **Create the Workspace**:  
    ```bash  
-   daytona create  
+   daytona create https://github.com/Lavavarshney/cricket-quira.git 
    ```  
 
 ... MORE STEPS IF NEEDED ...
 
 4. **Start the Application**:  
    ```bash  
-   command to start the app
+    npm run dev
    ```  
-  npm run dev
+
 ---
 
 ## ✨ Features  
