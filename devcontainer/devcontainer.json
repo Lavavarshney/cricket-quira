@@ -1,0 +1,22 @@
+{
+    "name": "Website for conducting cricket tournaments in various formats for XYZ Organization",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:20", // Node.js 20 image
+    "features": {
+      "ghcr.io/devcontainers/features/node:1": {
+        "version": "20"
+      }
+    },
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "terminal.integrated.defaultProfile.linux": "bash"
+        },
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "esbenp.prettier-vscode"
+        ]
+      }
+    },
+    "postCreateCommand": "npm install"
+  }
+  
